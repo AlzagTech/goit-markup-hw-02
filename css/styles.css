@@ -1,0 +1,130 @@
+/* Палітра кольорів сайту
+    
+Колір основного тексту: #757575;
+Колір заголовків: #212121;
+
+Основний колір фону: #ffffff;
+Додатковий колір фону: #2F303A;
+Додатквоий колір фону: #F5F4FA;
+Акцент: #2196F3;
+
+Hover кнопки: #188CE8;
+Тел. та пошта у футері: rgba(255, 255, 255, 0.6);
+
+*/
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #2F303A;
+    --tertiary-bg-color: #F5F4FA;
+    --acent-color: #2196F3;
+}
+
+
+/* Загальні стилі сайту */
+
+.page {
+    background-color: var(primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* Шапка сайту */
+/* Логотип */
+
+.logo {
+    color: #000000;
+}
+
+.footer .logo{
+    color: #ffffff;
+}
+
+.logo > span {
+    color: var(--acent-color);
+}
+
+/* Навігація */
+
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--acent-color);
+}
+
+/* Контакти в шапці */
+.header-contacts .link {
+    color: var(--primary-text-color);
+}
+
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+    color: var(--acent-color);
+}
+
+/* Головний контент */
+/* Блок герой */
+
+.hero {
+    background-color: var(--secondary-bg-color);
+}
+
+.hero-title {
+    color: #ffffff;
+}
+
+/* Секція */
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* Особливості */
+
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+/* Наша команда */
+
+.section.team {
+    background-color: var(--tertiary-bg-color);
+}
+
+.cards .title {
+    color: var(--title-text-color);
+}
+
+.card .text {
+
+}
+
+/* Підвал */
+
+.footer {
+    background-color: var(--secondary-bg-color);
+}
+
+.address .text {
+    color: #ffffff;
+}
+
+.address .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address .link:hover,
+.address .link:focus {
+    color: var(--acent-color);
+}
+
+ 
