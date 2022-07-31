@@ -10,6 +10,7 @@
 
 Hover кнопки: #188CE8;
 Тел. та пошта у футері: rgba(255, 255, 255, 0.6);
+Колір фону кнопок: #F5F4FA;
 
 */
 
@@ -17,10 +18,13 @@ Hover кнопки: #188CE8;
     --primary-text-color: #757575;
     --title-text-color: #212121;
 
-    --primary-bg-color: #ffffff;
+
+    --primary-white-color: #ffffff;
+
     --secondary-bg-color: #2F303A;
     --tertiary-bg-color: #F5F4FA;
     --acent-color: #2196F3;
+    --button-bg-color: #F5F4FA;
 }
 
 
@@ -43,7 +47,7 @@ Hover кнопки: #188CE8;
 }
 
 .footer .logo{
-    color: #ffffff;
+    color: var(--primary-white-color);
 }
 
 .logo > span {
@@ -58,6 +62,10 @@ Hover кнопки: #188CE8;
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+    color: var(--acent-color);
+}
+
+.site-nav .link.current {
     color: var(--acent-color);
 }
 
@@ -79,7 +87,18 @@ Hover кнопки: #188CE8;
 }
 
 .hero-title {
-    color: #ffffff;
+    color: var(--primary-white-color);
+}
+
+.hero-btn {
+    background-color: var(--acent-color);
+    color: var(--primary-white-color);
+    border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
 }
 
 /* Секція */
@@ -104,9 +123,6 @@ Hover кнопки: #188CE8;
     color: var(--title-text-color);
 }
 
-.card .text {
-
-}
 
 /* Підвал */
 
@@ -115,7 +131,7 @@ Hover кнопки: #188CE8;
 }
 
 .address .text {
-    color: #ffffff;
+    color: var(--primary-white-color);
 }
 
 .address .link {
@@ -130,10 +146,23 @@ Hover кнопки: #188CE8;
  
 /* Стилі сторінки "Портфоліо" */
 /* Фільрти */
+/* Кнопки фільтру */
 
+.filter-btn {
+    background-color: var(--button-bg-color);
+    color: var(--title-text-color);
+    border: none;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: var(--acent-color);
+    color: var(--primary-white-color);
+}
 
 /* Проекти */
 
 .projects h3 {
     color: var(--title-text-color);
 }
+
