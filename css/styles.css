@@ -117,16 +117,17 @@ button {
     background-color: var(--secondary-bg-color);
 }
 
-.address .text {
-    color: var(--primary-white-color);
+.address .link {
+    color: var(--contacts-link-color);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    text-decoration: none;
 }
 
-.address .link {
-    color: var(--contacts-link-color);
-    text-decoration: none;
+.address .link.primary {
+    color: var(--primary-white-color);
+    
 }
 
 .address .link:hover,
@@ -179,6 +180,11 @@ button {
 }
 
 /* Особливості */
+
+.feature-title,
+.works-title {
+    display: none;
+}
 
 .feature-list .title {
     color: var(--title-text-color);
@@ -234,6 +240,11 @@ button {
     letter-spacing: 0.06em;
 }
 
+.projects .link {
+    text-decoration: none;
+}
+
 .projects .text {
     line-height: 1.88;
+    color: #757575;
 }
