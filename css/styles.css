@@ -31,7 +31,7 @@ Hover кнопки: #188CE8;
     --button-bg-color: #F5F4FA;
 
     --contacts-link-color: rgba(255, 255, 255, 0.6);
-    --hero-btn-hover:#188CE8;
+    --hero-btn-hover: #188CE8;
 }
 
 
@@ -43,17 +43,18 @@ body {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+button {
+    font-family: inherit;
 }
 
 .list {
     list-style: none;
 }
 
-button {
-    font-family: inherit;
-}
 
 /* Шапка сайту */
 /* Логотип */
@@ -67,11 +68,11 @@ button {
     text-decoration: none;
 }
 
-.footer .logo{
+.footer .logo {
     color: var(--primary-white-color);
 }
 
-.logo > span {
+.logo>span {
     color: var(--acent-color);
 }
 
@@ -127,7 +128,7 @@ button {
 
 .address .link.primary {
     color: var(--primary-white-color);
-    
+
 }
 
 .address .link:hover,
@@ -208,9 +209,12 @@ button {
     line-height: 1.19;
 }
 
+.cards .text {
+    font-size: 16px;
+    line-height: 1.19;
+}
 
 
- 
 /* Стилі сторінки "Портфоліо" */
 /* Фільрти */
 /* Кнопки фільтру */
@@ -245,6 +249,7 @@ button {
 }
 
 .projects .text {
+    font-size: 16px;
     line-height: 1.88;
     color: #757575;
 }
